@@ -81,7 +81,8 @@ AB_OTA_PARTITIONS += \
     system \
     system_ext \
     product \
-    vbmeta
+    vbmeta \
+    pvmfw
 
 # EMULATOR common modules
 BOARD_EMULATOR_COMMON_MODULES := liblight
