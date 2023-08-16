@@ -167,7 +167,11 @@ DEVICE_MATRIX_FILE := \
 
 PRODUCT_PACKAGES += GosOverlay GosSettingsOverlay
 
-DEVICE_PACKAGE_OVERLAYS += device/google/gs101/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+	device/google/gs101/overlay-excluded-from-enforce-rro-targets
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+	device/google/gs101/overlay-excluded-from-enforce-rro-targets
 
 # Enforce the Product interface
 PRODUCT_PRODUCT_VNDK_VERSION := current
