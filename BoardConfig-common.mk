@@ -334,7 +334,6 @@ BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(KERNEL_MODULE_DIR)/vendor_dlkm.m
 BOARD_DO_NOT_STRIP_VENDOR_MODULES := true
 
 # Prebuilt kernel modules that are *not* listed in vendor_boot.modules.load
-BOARD_PREBUILT_VENDOR_RAMDISK_KERNEL_MODULES = fips140.ko
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_EXTRA = $(foreach k,$(BOARD_PREBUILT_VENDOR_RAMDISK_KERNEL_MODULES),$(if $(wildcard $(KERNEL_MODULE_DIR)/$(k)), $(k)))
 
 # Kernel modules that are listed in vendor_boot.modules.load
