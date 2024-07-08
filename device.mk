@@ -76,7 +76,6 @@ PRODUCT_SOONG_NAMESPACES += \
 	vendor/google/whitechapel/tools \
 	vendor/google/camera \
 	vendor/google/interfaces \
-	vendor/google_devices/common/proprietary/confirmatioui_hal \
 	vendor/google_nos/host/android \
 	vendor/google_nos/test/system-test-harness
 
@@ -803,8 +802,6 @@ include device/google/gs-common/trusty/trusty.mk
 PRODUCT_PACKAGES_DEBUG += \
     trusty-ut-ctrl \
     tipc-test
-
-include device/google/gs101/confirmationui/confirmationui.mk
 
 include device/google/gs101/trusty_metricsd/trusty_metricsd.mk
 
