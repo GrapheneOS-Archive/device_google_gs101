@@ -366,7 +366,12 @@ BOARD_PREBUILT_VENDOR_RAMDISK_KERNEL_MODULES = fips140.ko
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_EXTRA = $(foreach k,$(BOARD_PREBUILT_VENDOR_RAMDISK_KERNEL_MODULES),$(if $(wildcard $(KERNEL_MODULE_DIR)/$(k)), $(k)))
 
 # Kernel modules that are listed in vendor_boot.modules.load
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_FILE := $(strip $(shell cat $(KERNEL_MODULE_DIR)/vendor_boot.modules.load))
+# Starting from 6.1, use modules.load instead. It lists modules for vendor ramdisk regardless of the partition name.
+ifneq ($(wildcard $(KERNEL_MODULE_DIR)/modules.load),)
+    BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_FILE := $(strip $(shell cat $(KERNEL_MODULE_DIR)/modules.load))
+else
+    BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_FILE := $(strip $(shell cat $(KERNEL_MODULE_DIR)/vendor_boot.modules.load))
+endif
 ifndef BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_FILE
 $(error vendor_boot.modules.load not found or empty)
 endif
