@@ -571,6 +571,9 @@ include device/google/gs-common/storage/storage.mk
 PRODUCT_PACKAGES += \
 	android.hardware.health.storage-service.default
 
+# Battery Mitigation
+include device/google/gs-common/battery_mitigation/bcl.mk
+
 # storage pixelstats
 -include hardware/google/pixel/pixelstats/device.mk
 
