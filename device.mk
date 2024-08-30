@@ -213,6 +213,8 @@ PRODUCT_SOONG_NAMESPACES += \
 	vendor/arm/mali/valhall
 
 $(call soong_config_set,pixel_mali,soc,$(TARGET_BOARD_PLATFORM))
+# Used in gfx_tools when defining tests with composer2 interface for gs101 devices
+$(call soong_config_set,gfx_tools,use_hwc2,true)
 
 include device/google/gs-common/gpu/gpu.mk
 PRODUCT_PACKAGES += \
