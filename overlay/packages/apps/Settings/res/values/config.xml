@@ -31,4 +31,6 @@
          devices will be able to vary their amplitude but do not possess enough dynamic range to
          have distinct intensity levels -->
     <bool name="config_vibration_supports_multiple_intensities">true</bool>
+
+    <integer name="config_vibration_supported_intensity_levels">3</integer>
 </resources>
