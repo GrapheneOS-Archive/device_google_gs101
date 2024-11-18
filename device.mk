@@ -388,7 +388,7 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,google_displaycolor,displaycolor_platform,gs101)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.sys.sf.native_mode=2
+	persist.sys.sf.color_saturation=1.0
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
