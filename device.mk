@@ -530,13 +530,6 @@ $(call soong_config_set,aoc,target_product,$(TARGET_PRODUCT))
 
 $(call soong_config_set,android_hardware_audio,run_64bit,true)
 
-# Audio properties
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.config.vc_call_vol_steps=7 \
-	ro.config.media_vol_steps=25 \
-	ro.audio.monitorRotation = true \
-	ro.audio.offload_wakelock=false
-
 # declare use of spatial audio
 # PRODUCT_PROPERTY_OVERRIDES += \
 #	ro.audio.spatializer_enabled=true
