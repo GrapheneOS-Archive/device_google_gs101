@@ -562,10 +562,6 @@ PRODUCT_PACKAGES += \
 	update_engine_sideload \
 	update_verifier
 
-# Enable Incremental on the device
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.incremental.enable=true
-
 # Project
 include hardware/google/pixel/common/pixel-common-device.mk
 
