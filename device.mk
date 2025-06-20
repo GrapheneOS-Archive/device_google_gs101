@@ -394,10 +394,6 @@ PRODUCT_COPY_FILES += \
 # hw composer HAL
 $(call soong_config_set,google_displaycolor,displaycolor_platform,gs101)
 
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PACKAGES += displaycolor_service
-endif
-
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.sf.disable_backpressure=0 \
 	debug.sf.enable_gl_backpressure=1
