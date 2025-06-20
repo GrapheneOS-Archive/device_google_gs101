@@ -562,11 +562,6 @@ PRODUCT_PACKAGES += \
 	update_engine_sideload \
 	update_verifier
 
-# Enable watchdog timeout loop breaker.
-PRODUCT_PROPERTY_OVERRIDES += \
-	framework_watchdog.fatal_window.second=600 \
-	framework_watchdog.fatal_count=3
-
 # Enable zygote critical window.
 PRODUCT_PROPERTY_OVERRIDES += \
 	zygote.critical_window.minute=10
