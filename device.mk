@@ -101,33 +101,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	logd.logpersistd.size=30
 endif
 
-# From system.property
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.telephony.default_network=27 \
-	persist.vendor.ril.db_ecc.use.iccid_to_plmn=1 \
-	persist.vendor.ril.db_ecc.id.type=5
-	#rild.libpath=/system/lib64/libsec-ril.so \
-	#rild.libargs=-d /dev/umts_ipc0
-
-# SIT-RIL Logging setting
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.vendor.ril.log_mask=3 \
-	persist.vendor.ril.log.base_dir=/data/vendor/radio/sit-ril \
-	persist.vendor.ril.log.chunk_size=5242880 \
-	persist.vendor.ril.log.num_file=3
-
-# Enable reboot free DSDS
-PRODUCT_PRODUCT_PROPERTIES += \
-	persist.radio.reboot_on_modem_change=false
-
-# Enable Early Camping
-PRODUCT_PRODUCT_PROPERTIES += \
-	persist.vendor.ril.camp_on_earlier=1
-
-# Carrier configuration default location
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.vendor.radio.config.carrier_config_dir=/vendor/firmware/carrierconfig
-
 # Set the Bluetooth Class of Device
 # Service Field: 0x5A -> 90
 #    Bit 17: Networking
