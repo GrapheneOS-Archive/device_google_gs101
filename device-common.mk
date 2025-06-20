@@ -32,10 +32,6 @@ PRODUCT_COPY_FILES += \
 # ZramWriteback
 -include hardware/google/pixel/mm/device_gki.mk
 
-# Set thermal warm reset
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.thermal_warmreset = true
-
 # Trigger fsck on upgrade (305658663)
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.preventative_fsck = 1
