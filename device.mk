@@ -70,12 +70,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image.lz4
 
-ifneq ($(BOARD_WITHOUT_RADIO),true)
-# Include vendor telephony soong namespace
-PRODUCT_SOONG_NAMESPACES += \
-	vendor/samsung_slsi/telephony/$(BOARD_USES_SHARED_VENDOR_TELEPHONY)
-endif
-
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 #Set IKE logs to verbose for WFC
 PRODUCT_PROPERTY_OVERRIDES += log.tag.IKE=VERBOSE
