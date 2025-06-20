@@ -27,7 +27,6 @@ include device/google/gs-common/pixel_metrics/pixel_metrics.mk
 include device/google/gs-common/performance/perf.mk
 include device/google/gs-common/power/power.mk
 include device/google/gs-common/display/dump.mk
-include device/google/gs101/dumpstate/item.mk
 include device/google/gs-common/radio/dump.mk
 include device/google/gs-common/gear/dumpstate/aidl.mk
 include device/google/gs-common/camera/dump.mk
