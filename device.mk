@@ -299,7 +299,6 @@ PRODUCT_PACKAGES += \
 
 # for now include gralloc here. should come from hardware/google_devices/exynos5
 PRODUCT_PACKAGES += \
-	android.hardware.memtrack-service.pixel \
 	libion_exynos \
 	libion
 
