@@ -395,10 +395,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	debug.slsi_platform=1 \
-	debug.hwc.winupdate=1
-
 # hw composer HAL
 $(call soong_config_set,google_displaycolor,displaycolor_platform,gs101)
 PRODUCT_PACKAGES += \
