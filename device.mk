@@ -139,9 +139,6 @@ PRODUCT_SOONG_NAMESPACES += external/OpenCL-ICD-Loader
 PRODUCT_PACKAGES += \
        libOpenCL
 
-PRODUCT_VENDOR_PROPERTIES += \
-	ro.hardware.vulkan=mali
-
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	debug.mali.disable_backend_affinity=true
 
