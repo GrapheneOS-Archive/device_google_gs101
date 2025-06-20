@@ -35,10 +35,6 @@ endif
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
 
-# Set system properties identifying the chipset
-PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Google
-PRODUCT_VENDOR_PROPERTIES += ro.soc.model=Tensor
-
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.testing_battery_profile=2
 
