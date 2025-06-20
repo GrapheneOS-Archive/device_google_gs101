@@ -562,10 +562,6 @@ PRODUCT_PACKAGES += \
 	update_engine_sideload \
 	update_verifier
 
-# Enable zygote critical window.
-PRODUCT_PROPERTY_OVERRIDES += \
-	zygote.critical_window.minute=10
-
 # Suspend properties
 # (b/171433995): Enable short suspend backoffs and reduce max backoff time
 PRODUCT_PROPERTY_OVERRIDES += \
