@@ -233,9 +233,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	checkpoint_gc
 
-# Touch firmware
-#PRODUCT_COPY_FILES += \
-	device/google/gs101/firmware/touch/s6sy761.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/s6sy761.fw
 # Touch
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
