@@ -451,6 +451,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 include device/google/gs101/trusty_metricsd/trusty_metricsd.mk
 
+# TODO: Remove android.hardware.graphics.composer@2.4-impl after boot is verified.
 PRODUCT_PACKAGES += \
 	android.hardware.graphics.composer@2.4-impl \
 	android.hardware.graphics.composer@2.4-service
