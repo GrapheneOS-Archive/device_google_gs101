@@ -398,8 +398,6 @@ PRODUCT_COPY_FILES += \
 # hw composer HAL
 $(call soong_config_set,google_displaycolor,displaycolor_platform,gs101)
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.sys.sf.color_saturation=1.0
 PRODUCT_COPY_FILES += \
 	device/google/gs101/display/display_colordata_cal0.pb:$(TARGET_COPY_OUT_VENDOR)/etc/display_colordata_cal0.pb
 
