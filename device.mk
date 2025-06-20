@@ -397,12 +397,6 @@ $(call soong_config_set,google_displaycolor,displaycolor_platform,gs101)
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.sys.sf.native_mode=2
 
-# Cannot reference variables defined in BoardConfig.mk, uncomment this if
-# BOARD_USES_EXYNOS_AFBC_FEATURE is true
-# set the dss enable status setup
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.vendor.ddk.set.afbc=1
-
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # WPA SUPPLICANT
