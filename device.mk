@@ -301,9 +301,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	libion
 
-PRODUCT_PACKAGES += \
-	libhwjpeg
-
 # Video Editor
 PRODUCT_PACKAGES += \
 	VideoEditorGoogle
