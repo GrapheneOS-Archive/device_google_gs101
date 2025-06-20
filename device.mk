@@ -562,13 +562,6 @@ PRODUCT_PACKAGES += \
 	update_engine_sideload \
 	update_verifier
 
-# Suspend properties
-# (b/171433995): Enable short suspend backoffs and reduce max backoff time
-PRODUCT_PROPERTY_OVERRIDES += \
-    suspend.short_suspend_threshold_millis=2000 \
-    suspend.short_suspend_backoff_enabled=true \
-    suspend.max_sleep_time_millis=40000
-
 # Enable Incremental on the device
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.incremental.enable=true
