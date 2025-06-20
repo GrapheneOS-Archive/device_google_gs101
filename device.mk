@@ -139,17 +139,6 @@ PRODUCT_SOONG_NAMESPACES += external/OpenCL-ICD-Loader
 PRODUCT_PACKAGES += \
        libOpenCL
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	debug.mali.disable_backend_affinity=true
-
-# Mali Configuration Properties
-PRODUCT_VENDOR_PROPERTIES += \
-	vendor.mali.platform.config=/vendor/etc/mali/platform.config \
-	vendor.mali.debug.config=/vendor/etc/mali/debug.config \
-	vendor.mali.base_protected_max_core_count=4 \
-	vendor.mali.base_protected_tls_max=67108864 \
-	vendor.mali.platform_agt_frequency_khz=24576
-
 ifeq ($(USE_SWIFTSHADER),true)
 PRODUCT_PACKAGES += \
 	libGLESv1_CM_swiftshader \
