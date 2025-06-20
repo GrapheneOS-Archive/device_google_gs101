@@ -400,15 +400,6 @@ $(call soong_config_set,google_displaycolor,displaycolor_platform,gs101)
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# WPA SUPPLICANT
-PRODUCT_COPY_FILES += \
-	device/google/gs101/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-	device/google/gs101/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
-
-# WIFI COEX
-PRODUCT_COPY_FILES += \
-	device/google/gs101/wifi/coex_table.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/coex_table.xml
-
 PRODUCT_PACKAGES += hostapd
 PRODUCT_PACKAGES += wpa_supplicant
 PRODUCT_PACKAGES += wpa_supplicant.conf
