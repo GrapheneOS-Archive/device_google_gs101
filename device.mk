@@ -301,10 +301,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	libion
 
-# WideVine modules
-PRODUCT_PACKAGES += \
-	liboemcrypto
-
 # Lyric Camera HAL settings
 include device/google/gs-common/camera/lyric.mk
 $(call soong_config_set,lyric,soc,gs101)
