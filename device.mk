@@ -518,9 +518,6 @@ PRODUCT_COPY_FILES += \
 	device/google/gs101/default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions.xml \
 	device/google/gs101/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
-# modem logging binary/configs
-PRODUCT_PACKAGES += modem_logging_control
-
 # modem logging configs
 PRODUCT_COPY_FILES += \
 	device/google/gs101/radio/config/logging.conf:$(TARGET_COPY_OUT_VENDOR)/etc/modem/logging.conf \
