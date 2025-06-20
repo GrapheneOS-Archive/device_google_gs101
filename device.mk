@@ -518,30 +518,6 @@ PRODUCT_COPY_FILES += \
 	device/google/gs101/default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions.xml \
 	device/google/gs101/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
-# modem logging configs
-PRODUCT_COPY_FILES += \
-	device/google/gs101/radio/config/logging.conf:$(TARGET_COPY_OUT_VENDOR)/etc/modem/logging.conf \
-	device/google/gs101/radio/config/default.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/default.cfg \
-	device/google/gs101/radio/config/default.nprf:$(TARGET_COPY_OUT_VENDOR)/etc/modem/default.nprf \
-	device/google/gs101/radio/config/default_metrics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem/default_metrics.xml \
-	device/google/gs101/radio/config/teamfood_default.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/teamfood_default.cfg \
-	device/google/gs101/radio/config/teamfood_default.nprf:$(TARGET_COPY_OUT_VENDOR)/etc/modem/teamfood_default.nprf \
-	device/google/gs101/radio/config/teamfood_default_metrics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem/teamfood_default_metrics.xml \
-	device/google/gs101/radio/config/default_stability.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/default_stability.cfg \
-	device/google/gs101/radio/config/default_stability.nprf:$(TARGET_COPY_OUT_VENDOR)/etc/modem/default_stability.nprf \
-	device/google/gs101/radio/config/default_NAS_RRC.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/default_NAS_RRC.cfg \
-	device/google/gs101/radio/config/default_NAS_RRC.nprf:$(TARGET_COPY_OUT_VENDOR)/etc/modem/default_NAS_RRC.nprf \
-	device/google/gs101/radio/config/default_network.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/default_network.cfg \
-	device/google/gs101/radio/config/default_network.nprf:$(TARGET_COPY_OUT_VENDOR)/etc/modem/default_network.nprf \
-	device/google/gs101/radio/config/Pixel_Default.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Pixel_Default.cfg \
-	device/google/gs101/radio/config/Pixel_Default.nprf:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Pixel_Default.nprf \
-	device/google/gs101/radio/config/Pixel_Default_metrics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Pixel_Default_metrics.xml \
-	device/google/gs101/radio/config/Pixel_stability.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Pixel_stability.cfg \
-	device/google/gs101/radio/config/Pixel_stability.nprf:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Pixel_stability.nprf
-
-PRODUCT_COPY_FILES += \
-	device/google/gs101/radio/gnss_blanking.csv:$(TARGET_COPY_OUT_VENDOR)/etc/modem/gnss_blanking.csv
-
 # Vibrator Diag
 PRODUCT_PACKAGES_DEBUG += \
 	diag-vibrator \
