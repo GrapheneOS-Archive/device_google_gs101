@@ -301,10 +301,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	libion
 
-# Video Editor
-PRODUCT_PACKAGES += \
-	VideoEditorGoogle
-
 # WideVine modules
 PRODUCT_PACKAGES += \
 	liboemcrypto
