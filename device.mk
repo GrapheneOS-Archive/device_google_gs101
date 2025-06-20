@@ -434,11 +434,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
-ifeq ($(TARGET_USES_CL_KERNEL),true)
-PRODUCT_PACKAGES += \
-	libopenvx-opencl
-endif
-
 # Location
 ifeq (,$(filter tangor citron,$(subst _, ,$(TARGET_PRODUCT))))
 include device/google/gs-common/gps/brcm/device.mk
