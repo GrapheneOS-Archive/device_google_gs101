@@ -456,21 +456,6 @@ PRODUCT_PACKAGES += \
 	android.hardware.graphics.composer@2.4-impl \
 	android.hardware.graphics.composer@2.4-service
 
-# System props to enable Bluetooth Quality Report (BQR) feature
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PRODUCT_PROPERTIES += \
-	persist.bluetooth.bqr.event_mask=262174 \
-	persist.bluetooth.bqr.min_interval_ms=500
-else
-PRODUCT_PRODUCT_PROPERTIES += \
-	persist.bluetooth.bqr.event_mask=30 \
-	persist.bluetooth.bqr.min_interval_ms=500
-endif
-
-# Enable Bluetooth AutoOn feature
-PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.server.automatic_turn_on=true
-
 #VNDK
 PRODUCT_PACKAGES += \
 	vndk-libs
