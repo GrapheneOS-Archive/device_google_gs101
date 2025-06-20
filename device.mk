@@ -133,10 +133,6 @@ TARGET_USES_VULKAN = true
 $(call soong_config_set,gfx_tools,use_hwc2,true)
 
 include device/google/gs-common/gpu/gpu.mk
-PRODUCT_PACKAGES += \
-	libGLES_mali \
-	vulkan.mali \
-	libgpudataproducer
 
 # Install the OpenCL ICD Loader
 PRODUCT_SOONG_NAMESPACES += external/OpenCL-ICD-Loader
