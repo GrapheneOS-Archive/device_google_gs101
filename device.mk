@@ -70,10 +70,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image.lz4
 
-# OEM Unlock reporting
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	ro.oem_unlock_supported=1
-
 ifneq ($(BOARD_WITHOUT_RADIO),true)
 # Include vendor telephony soong namespace
 PRODUCT_SOONG_NAMESPACES += \
