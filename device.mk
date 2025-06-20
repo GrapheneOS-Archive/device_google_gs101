@@ -64,10 +64,6 @@ BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
 PRODUCT_SOONG_NAMESPACES += \
 	hardware/google/av \
-	hardware/google/gchips \
-	hardware/google/graphics/common \
-	hardware/google/gchips/gralloc4 \
-	hardware/google/graphics/gs101 \
 	hardware/google/interfaces \
 	hardware/google/pixel \
 	device/google/gs101 \
