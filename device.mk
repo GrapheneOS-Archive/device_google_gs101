@@ -457,10 +457,6 @@ PRODUCT_PACKAGES += \
 	android.hardware.graphics.composer@2.4-impl \
 	android.hardware.graphics.composer@2.4-service
 
-#VNDK
-PRODUCT_PACKAGES += \
-	vndk-libs
-
 #PRODUCT_ENFORCE_RRO_TARGETS := \
 	#framework-res
 
