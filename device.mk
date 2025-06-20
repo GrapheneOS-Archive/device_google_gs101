@@ -147,23 +147,6 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.software.vulkan.deqp.level-2024-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
 	frameworks/native/data/etc/android.software.opengles.deqp.level-2024-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml
 
-ifeq ($(USE_SWIFTSHADER),true)
-PRODUCT_VENDOR_PROPERTIES += \
-	ro.hardware.egl = swiftshader
-else
-PRODUCT_VENDOR_PROPERTIES += \
-	ro.hardware.egl = mali
-endif
-
-# Configure EGL blobcache
-PRODUCT_VENDOR_PROPERTIES += \
-       ro.egl.blobcache.multifile=true \
-       ro.egl.blobcache.multifile_limit=33554432 \
-
-PRODUCT_VENDOR_PROPERTIES += \
-	ro.opengles.version=196610 \
-	graphics.gpu.profiler.support=true
-
 # b/295257834 Add HDR shaders to SurfaceFlinger's pre-warming cache
 PRODUCT_VENDOR_PROPERTIES += ro.surface_flinger.prime_shader_cache.ultrahdr=1
 
