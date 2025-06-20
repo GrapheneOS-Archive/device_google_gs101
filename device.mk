@@ -399,12 +399,6 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,google_displaycolor,displaycolor_platform,gs101)
 
 # Cannot reference variables defined in BoardConfig.mk, uncomment this if
-# BOARD_USES_EXYNOS_DSS_FEATURE is true
-## set the dss enable status setup
-#PRODUCT_PROPERTY_OVERRIDES += \
-#        ro.exynos.dss=1
-
-# Cannot reference variables defined in BoardConfig.mk, uncomment this if
 # BOARD_USES_EXYNOS_AFBC_FEATURE is true
 # set the dss enable status setup
 PRODUCT_PROPERTY_OVERRIDES += \
