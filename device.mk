@@ -66,13 +66,7 @@ PRODUCT_SOONG_NAMESPACES += \
 	hardware/google/av \
 	hardware/google/interfaces \
 	hardware/google/pixel \
-	device/google/gs101 \
-	vendor/google_devices/common/chre/host/hal \
-	vendor/google/whitechapel/tools \
-	vendor/google/camera \
-	vendor/google/interfaces \
-	vendor/google_nos/host/android \
-	vendor/google_nos/test/system-test-harness
+	device/google/gs101
 
 LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image.lz4
 
