@@ -29,9 +29,6 @@ endif
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.vendor.testing_battery_profile=2
-
 # The default value of this variable is false and should only be set to true when
 # the device allows users to retain eSIM profiles after factory reset of user data.
 PRODUCT_PRODUCT_PROPERTIES += \
