@@ -518,13 +518,6 @@ PRODUCT_COPY_FILES += \
 	device/google/gs101/default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions.xml \
 	device/google/gs101/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
-# Vibrator Diag
-PRODUCT_PACKAGES_DEBUG += \
-	diag-vibrator \
-	diag-vibrator-cs40l25a \
-	diag-vibrator-drv2624 \
-	$(NULL)
-
 PRODUCT_PACKAGES += \
 	android.hardware.health-service.gs101 \
 	android.hardware.health-service.gs101_recovery \
