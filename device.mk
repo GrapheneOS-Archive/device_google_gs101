@@ -546,7 +546,7 @@ PRODUCT_PACKAGES += \
 	tinymix \
 	tinypcminfo \
 	tinyhostless \
-	cplay \
+	cplay
 endif
 
 # EdgeTPU
