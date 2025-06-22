@@ -561,6 +561,10 @@ PRODUCT_PACKAGES += \
 	update_engine_sideload \
 	update_verifier
 
+# pKVM
+$(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
+PRODUCT_BUILD_PVMFW_IMAGE := true
+
 # Project
 include hardware/google/pixel/common/pixel-common-device.mk
 
