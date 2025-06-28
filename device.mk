@@ -165,6 +165,8 @@ endif
 DEVICE_MATRIX_FILE := \
 	device/google/gs101/compatibility_matrix.xml
 
+PRODUCT_PACKAGES += GosOverlay GosSettingsOverlay
+
 DEVICE_PACKAGE_OVERLAYS += device/google/gs101/overlay
 
 # Enforce the Product interface
