@@ -307,9 +307,6 @@
     <!-- Pre-scale volume at volume step 3 for Absolute Volume -->
     <fraction name="config_prescaleAbsoluteVolume_index3">100%</fraction>
 
-    <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
-    <integer name="config_udfps_illumination_transition_ms">0</integer>
-
     <!-- Whether device supports increased touch sensitvity -->
     <bool name="config_supportGloveMode">true</bool>
 
