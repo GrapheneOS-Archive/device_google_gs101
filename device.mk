@@ -168,7 +168,6 @@ DEVICE_MATRIX_FILE := \
 PRODUCT_PACKAGES += GosOverlay GosSettingsOverlay
 
 DEVICE_PACKAGE_OVERLAYS += \
-	device/google/gs101/overlay \
 	device/google/gs101/overlay-excluded-from-enforce-rro-targets
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
@@ -315,12 +314,7 @@ $(call soong_config_set,google3a_config,soc,gs101)
 # WiFi
 PRODUCT_PACKAGES += \
 	wificond \
-	libwpa_client \
-	WifiOverlay \
-
-# Connectivity
-PRODUCT_PACKAGES += \
-        ConnectivityOverlay
+	libwpa_client
 
 PRODUCT_PACKAGES_DEBUG += \
 	f2fs_io \
