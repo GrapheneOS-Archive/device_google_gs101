@@ -303,12 +303,7 @@ $(call soong_config_set,google3a_config,soc,gs101)
 PRODUCT_PACKAGES += \
 	android.hardware.wifi-service \
 	wificond \
-	libwpa_client \
-	WifiOverlay \
-
-# Connectivity
-PRODUCT_PACKAGES += \
-        ConnectivityOverlay
+	libwpa_client
 
 PRODUCT_PACKAGES_DEBUG += \
 	f2fs_io \
