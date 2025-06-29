@@ -458,8 +458,8 @@ PRODUCT_PACKAGES += \
 	android.hardware.graphics.composer@2.4-impl \
 	android.hardware.graphics.composer@2.4-service
 
-#PRODUCT_ENFORCE_RRO_TARGETS := \
-	#framework-res
+PRODUCT_ENFORCE_RRO_TARGETS := \
+	framework-res
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
