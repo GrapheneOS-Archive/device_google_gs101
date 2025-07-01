@@ -269,11 +269,8 @@ endif
 # Add sensor HAL AIDL product packages
 PRODUCT_PACKAGES += android.hardware.sensors-service.multihal
 
-# USB HAL
-PRODUCT_PACKAGES += \
-	android.hardware.usb-service.gs101
-PRODUCT_PACKAGES += \
-	android.hardware.usb.gadget-service.gs101
+# USB HAL rc file
+PRODUCT_PACKAGES += usb_service_init_rc
 
 # MIDI feature
 PRODUCT_COPY_FILES += \
