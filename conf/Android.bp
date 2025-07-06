@@ -73,3 +73,10 @@ prebuilt_etc {
     vendor: true,
     vendor_ramdisk_available: true,
 }
+
+prebuilt_etc {
+    name: "init.gs101.grapheneos.rc",
+    src: "init.gs101.grapheneos.rc",
+    sub_dir: "init",
+    vendor: true,
+}

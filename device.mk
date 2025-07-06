@@ -167,6 +167,8 @@ DEVICE_MATRIX_FILE := \
 
 PRODUCT_PACKAGES += GosOverlay GosSettingsOverlay
 
+PRODUCT_PACKAGES += init.gs101.grapheneos.rc
+
 DEVICE_PACKAGE_OVERLAYS += \
 	device/google/gs101/overlay-excluded-from-enforce-rro-targets
 
